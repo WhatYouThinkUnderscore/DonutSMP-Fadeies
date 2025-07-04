@@ -176,5 +176,5 @@ async def stats(interaction: discord.Interaction, player_name: str):
 
     await interaction.response.send_message(embed=stats_embed)
 
-webserver.keep_alive()
 bot.run(TOKEN, log_handler=handler, log_level=logging.DEBUG)
+webserver.keep_alive()
